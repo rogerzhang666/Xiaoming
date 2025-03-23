@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>王小明智能对话系统</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h1>王小明智能对话系统</h1>
+        </div>
+        <div class="chat-messages" id="chatMessages">
+            <div class="message system">
+                欢迎使用王小明智能对话系统！请输入您的问题。
+            </div>
+        </div>
+        <div class="chat-input">
+            <textarea id="userInput" placeholder="请输入您的问题..." rows="3"></textarea>
+            <button id="sendButton">发送</button>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
