@@ -1,0 +1,72 @@
+{
+    "memory_types": {
+        "personal_info": {
+            "description": "关于对话者的个人信息",
+            "priority": 1,
+            "retention_days": 30,
+            "examples": [
+                "用户名字叫小张",
+                "用户喜欢打篮球",
+                "用户是一名程序员"
+            ]
+        },
+        "preferences": {
+            "description": "对话者的偏好和习惯",
+            "priority": 2,
+            "retention_days": 30,
+            "examples": [
+                "喜欢听周杰伦的歌",
+                "不喜欢吃辣",
+                "习惯早起"
+            ]
+        },
+        "conversation_context": {
+            "description": "重要的对话上下文",
+            "priority": 3,
+            "retention_days": 7,
+            "examples": [
+                "正在讨论一个项目计划",
+                "在解决一个技术问题",
+                "在规划周末活动"
+            ]
+        },
+        "emotional_state": {
+            "description": "对话者的情绪状态",
+            "priority": 4,
+            "retention_days": 1,
+            "examples": [
+                "今天心情不错",
+                "最近工作压力大",
+                "对某事感到困扰"
+            ]
+        }
+    },
+    "memory_triggers": {
+        "personal_info": [
+            "我叫",
+            "我是",
+            "我的名字",
+            "我今年",
+            "我在"
+        ],
+        "preferences": [
+            "我喜欢",
+            "我不喜欢",
+            "我讨厌",
+            "我习惯",
+            "我常常"
+        ],
+        "emotional_state": [
+            "我感觉",
+            "我觉得",
+            "我心情",
+            "我很",
+            "让我"
+        ]
+    },
+    "memory_extraction_rules": {
+        "max_memories_per_message": 3,
+        "min_confidence_score": 0.7,
+        "context_window_size": 5
+    }
+}

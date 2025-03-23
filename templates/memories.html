@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>王小明的记忆库</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/memories.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>王小明的记忆库</h1>
+            <nav class="main-nav">
+                <a href="/" class="nav-link">聊天</a>
+                <a href="/memories" class="nav-link active">记忆库</a>
+            </nav>
+        </header>
+        
+        <main>
+            <section class="memories-section">
+                <h2>已存储的记忆</h2>
+                <div class="memories-grid" id="memoriesGrid">
+                    <!-- 记忆卡片将通过JavaScript动态添加 -->
+                </div>
+            </section>
+
+            <section class="memory-usage-section">
+                <h2>最近的记忆调用</h2>
+                <div class="memory-usage-list" id="memoryUsageList">
+                    <!-- 记忆使用记录将通过JavaScript动态添加 -->
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>王小明智能对话系统 - 记忆管理模块</p>
+        </footer>
+    </div>
+    <script src="{{ url_for('static', filename='js/memories.js') }}"></script>
+</body>
+</html>
